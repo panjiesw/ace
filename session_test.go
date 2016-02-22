@@ -26,9 +26,10 @@ func TestSession(t *testing.T) {
 		session := c.Sessions("test")
 		test1 := session.GetString("test1", "")
 		test2 := session.GetInt("test2", 0)
+		var test2act int64 = 123
 
 		assert.Equal(t, "123", test1)
-		assert.Equal(t, 123, test2)
+		assert.Equal(t, test2act, test2)
 		c.String(200, "")
 	})
 
