@@ -1,0 +1,10 @@
+package: github.com/panjiesw/ace
+import:
+- package: github.com/julienschmidt/httprouter
+- package: github.com/plimble/sessions
+- package: github.com/plimble/utils
+  subpackages:
+  - pool
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
